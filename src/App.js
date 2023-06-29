@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Multiselect from './components/Multiselect';
+//import Compo from './components/Compo';
+
 
 function App() {
+
+  const values = ['Option 1 ','Option 2', 'Option 3'] //Enter your options
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/* <Compo value={values} readonly={false}/> */}
+      <Multiselect valuess={values} readonly={false}/>
     </div>
   );
 }
